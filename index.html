@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatrice kevin the king</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="calculator">
+		<div class="display">
+			<input type="text" id="result" readonly>
+		</div>
+		<div class="keys">
+			<button onclick="clearResult()">C</button>
+			<button onclick="backspace()"></button>
+			<button onclick="calculate('%')">%</button>
+			<button onclick="calculate('/')">÷</button>
+
+			<button onclick="appendToResult('7')">7</button>
+			<button onclick="appendToResult('8')">8</button>
+			<button onclick="appendToResult('9')">9</button>
+			<button onclick="calculate('*')">×</button>
+
+			<button onclick="appendToResult('4')">4</button>
+			<button onclick="appendToResult('5')">5</button>
+			<button onclick="appendToResult('6')">6</button>
+			<button onclick="calculate('-')">-</button>
+
+			<button onclick="appendToResult('1')">1</button>
+			<button onclick="appendToResult('2')">2</button>
+			<button onclick="appendToResult('3')">3</button>
+			<button onclick="calculate('+')">+</button>
+
+			<button onclick="appendToResult('0')">0</button>
+			<button onclick="appendToResult('.')">.</button>
+			<button onclick="calculate('=')">=</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
